@@ -1,0 +1,37 @@
+{
+  "name": "mihomo-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the mihomo (Clash Meta) core: control proxies, delay tests, TUN and Windows system proxy. Works with Clash Verge Rev out of the box via named pipe — no config changes needed.",
+  "type": "module",
+  "bin": {
+    "mihomo-mcp": "src/index.mjs"
+  },
+  "main": "src/index.mjs",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mihomo",
+    "clash",
+    "clash-verge",
+    "clash-meta",
+    "proxy",
+    "windows"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.25.0"
+  }
+}
